@@ -5437,10 +5437,10 @@ header h3 {
   line-height: 100%;
 }
 .waist {
-  background-image: url(../img/makey-grass.png);
+  background-image: url(../img/hills.png);
   background-repeat: no-repeat;
-  background-position: 10px 200px;
-  padding-bottom: 300px;
+  background-position: bottom center;
+  padding-bottom: 120px;
 }
 .waist h3 {
   margin: 5px 0 20px 0;
@@ -5455,31 +5455,38 @@ header h3 {
   margin-right: 5px;
   font-weight: bold;
 }
-.cool {
-  border-bottom: 1px solid #fff;
+.waist .blue {
+  background-color: #032042;
+  color: #acd3fc;
+  text-align: center;
+}
+.waist .blue h4 {
+  padding-bottom: 12px;
+}
+.white-bg {
   background-color: #fff;
   margin-bottom: 10px;
   color: black;
 }
-.cool h4 {
+.white-bg h4 {
   font-size: 28px;
 }
-.cool h5 {
+.white-bg h5 {
   font-size: 20px;
   text-transform: uppercase;
   color: #6e6e6e;
   font-weight: normal;
 }
-.cool h6 {
+.white-bg h6 {
   font-size: 18px;
 }
-.cool .featured {
+.white-bg .featured {
   padding: 30px 0;
-  margin-left: 30px;
+  margin-left: 10px;
   float: left;
-  width: 190px;
+  width: 182px;
 }
-.cool .featured h4 {
+.white-bg .featured h4 {
   color: #555555;
   margin: 10px;
   font-size: 16px;
@@ -5507,7 +5514,8 @@ header h3 {
   border-top: 6px solid #DBC52D;
 }
 .button {
-  display: block;
+  display: inline;
+  display: inline-block;
   text-align: center;
   -webkit-border-top-left-radius: 3px;
   -moz-border-radius-topleft: 3px;
@@ -5523,13 +5531,10 @@ header h3 {
   margin-bottom: 10px;
   text-decoration: none;
 }
-.button hover {
+.button:hover {
   background-color: #c7171d;
-}
-.button .button.big {
-  width: 80%;
-  margin-top: 50px;
-  padding: 20px;
+  color: #fff;
+  text-decoration: none;
 }
 .button.blue {
   background-color: #95cbf9;
@@ -5542,6 +5547,9 @@ header h3 {
   border-bottom: 3px solid #316B17;
   padding: 10px;
   color: #ffffff;
+}
+.button.block {
+  display: block;
 }
 .test {
   height: 20px;

@@ -24,10 +24,10 @@ header {
 }
 
 .waist {
-  background-image: url(../img/makey-grass.png);
+  background-image: url(../img/hills.png);
   background-repeat:no-repeat;
-  background-position:10px 200px;
-  padding-bottom: 300px;
+  background-position:bottom center;
+  padding-bottom: 120px;
 	h3 {
 		margin: 5px 0 20px 0;
 		font-size: 19px;
@@ -41,10 +41,17 @@ header {
 		  	font-weight: bold;
 		  }
 	}
+	.blue {
+		background-color: #032042;
+		color: #acd3fc;
+		text-align: center;
+		h4 {
+			padding-bottom:12px;
+		}
+	}
 }
 
-.cool {
-	border-bottom:1px solid #fff;
+.white-bg {
 	background-color: #fff;
 	margin-bottom:10px;
 	color: black;
@@ -62,9 +69,9 @@ header {
 		}
 	.featured {
 		padding: 30px 0;
-		margin-left: 30px;
+		margin-left: 10px;
 		float:left;
-		width: 190px;
+		width: 182px;
 		h4 {
 			color:@gray;
 			margin:10px;
@@ -96,8 +103,8 @@ header {
 }
 
 .button {
-	//display: inline;
-	display: block;
+	display: inline;
+	display: inline-block;
 	text-align: center;
 	.border-top-left-radius(3px);
 	.border-top-right-radius(3px);
@@ -108,29 +115,27 @@ header {
 	margin-top:5px;
 	margin-bottom:10px;
 	text-decoration: none;
-	hover {
+	&:hover {
 		background-color: #c7171d;
-	    }
-.button.big {
-		width: 80%;
-		margin-top: 50px;
-		padding: 20px;
-	  }
+		color:#fff;
+		text-decoration: none;
+	}
+	&.blue {
+		background-color: #95cbf9;
+		border-bottom:3px solid #666666;
+		padding:10px;
+		color:#2d2c54;
+	}
+	&.green {
+		background-color: #51B926;
+		border-bottom:3px solid #316B17;
+		padding:10px;
+		color: @white;    
+	}
+	&.block {
+		display: block;
+	}
 }
-.button.blue {
-	background-color: #95cbf9;
-	border-bottom:3px solid #666666;
-	padding:10px;
-	color:#2d2c54;    
-}
-
-.button.green {
-	background-color: #51B926;
-	border-bottom:3px solid #316B17;
-	padding:10px;
-	color: @white;    
-}
-
 .test {
 	height:20px;
 }
